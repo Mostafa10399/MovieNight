@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  MovieNight
+//
+//  Created by Mostafa Mahmoud on 29/03/2024.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4OTM4NjRkMDI0N2Y0YjA2NzA4NmY0ZWExYzBiNTI4OSIsInN1YiI6IjYxYWJjZjFiYWE2NTllMDA0MDQzOGFlZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MaBa0n0i7Zaz-42cito5Ks-AwNDsyVqxGNCwuyYZPXo"

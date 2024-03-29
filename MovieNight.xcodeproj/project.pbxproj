@@ -47,6 +47,13 @@
 		DE4E432B2BB5A6FE008D405D /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE4E43292BB5A6FE008D405D /* Montserrat-Regular.ttf */; };
 		DE4E432C2BB5A6FE008D405D /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE4E432A2BB5A6FE008D405D /* Montserrat-SemiBold.ttf */; };
 		DE8A7DCD2BB6580A00DD823F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8A7DCC2BB6580A00DD823F /* Launch Screen.storyboard */; };
+		DE8A7DDC2BB7075700DD823F /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8A7DD42BB7075700DD823F /* CoreKit.framework */; };
+		DE8A7DE32BB7075700DD823F /* CoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7DE22BB7075700DD823F /* CoreKitTests.swift */; };
+		DE8A7DE42BB7075700DD823F /* CoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8A7DD62BB7075700DD823F /* CoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE8A7DE72BB7075700DD823F /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8A7DD42BB7075700DD823F /* CoreKit.framework */; };
+		DE8A7DE82BB7075700DD823F /* CoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE8A7DD42BB7075700DD823F /* CoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE8A7DF42BB709B700DD823F /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7DF32BB709B700DD823F /* Movies.swift */; };
+		DE8A7DF72BB70C8B00DD823F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8A7DF62BB70C8B00DD823F /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +64,42 @@
 			remoteGlobalIDString = DE0897D02BB4630600DDC1F2;
 			remoteInfo = MovieNight;
 		};
+		DE8A7DDD2BB7075700DD823F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE0897C92BB4630600DDC1F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE8A7DD32BB7075700DD823F;
+			remoteInfo = CoreKit;
+		};
+		DE8A7DDF2BB7075700DD823F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE0897C92BB4630600DDC1F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE0897D02BB4630600DDC1F2;
+			remoteInfo = MovieNight;
+		};
+		DE8A7DE52BB7075700DD823F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE0897C92BB4630600DDC1F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE8A7DD32BB7075700DD823F;
+			remoteInfo = CoreKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE8A7DE92BB7075700DD823F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DE8A7DE82BB7075700DD823F /* CoreKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DE0897D12BB4630600DDC1F2 /* MovieNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +145,13 @@
 		DE4E43292BB5A6FE008D405D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		DE4E432A2BB5A6FE008D405D /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		DE8A7DCC2BB6580A00DD823F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DE8A7DD42BB7075700DD823F /* CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8A7DD62BB7075700DD823F /* CoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreKit.h; sourceTree = "<group>"; };
+		DE8A7DDB2BB7075700DD823F /* CoreKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8A7DE22BB7075700DD823F /* CoreKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreKitTests.swift; sourceTree = "<group>"; };
+		DE8A7DF32BB709B700DD823F /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		DE8A7DF62BB70C8B00DD823F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		DE8A7DF82BB71AC500DD823F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8A7DE72BB7075700DD823F /* CoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +167,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8A7DD12BB7075700DD823F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8A7DF72BB70C8B00DD823F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8A7DD82BB7075700DD823F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8A7DDC2BB7075700DD823F /* CoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +194,10 @@
 			children = (
 				DE0897D32BB4630600DDC1F2 /* MovieNight */,
 				DE0897E42BB4630700DDC1F2 /* MovieNightTests */,
+				DE8A7DD52BB7075700DD823F /* CoreKit */,
+				DE8A7DE12BB7075700DD823F /* CoreKitTests */,
 				DE0897D22BB4630600DDC1F2 /* Products */,
+				DE8A7DF52BB70C8B00DD823F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +206,8 @@
 			children = (
 				DE0897D12BB4630600DDC1F2 /* MovieNight.app */,
 				DE0897E12BB4630700DDC1F2 /* MovieNightTests.xctest */,
+				DE8A7DD42BB7075700DD823F /* CoreKit.framework */,
+				DE8A7DDB2BB7075700DD823F /* CoreKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,7 +371,68 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
+		DE8A7DD52BB7075700DD823F /* CoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7DD62BB7075700DD823F /* CoreKit.h */,
+				DE8A7DF82BB71AC500DD823F /* Config.xcconfig */,
+				DE8A7DF02BB7095D00DD823F /* Repository */,
+				DE8A7DF12BB7098400DD823F /* Remote */,
+				DE8A7DF22BB7098D00DD823F /* DTOs */,
+			);
+			path = CoreKit;
+			sourceTree = "<group>";
+		};
+		DE8A7DE12BB7075700DD823F /* CoreKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7DE22BB7075700DD823F /* CoreKitTests.swift */,
+			);
+			path = CoreKitTests;
+			sourceTree = "<group>";
+		};
+		DE8A7DF02BB7095D00DD823F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DE8A7DF12BB7098400DD823F /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		DE8A7DF22BB7098D00DD823F /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7DF32BB709B700DD823F /* Movies.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		DE8A7DF52BB70C8B00DD823F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7DF62BB70C8B00DD823F /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DE8A7DCF2BB7075700DD823F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8A7DE42BB7075700DD823F /* CoreKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		DE0897D02BB4630600DDC1F2 /* MovieNight */ = {
@@ -310,10 +442,12 @@
 				DE0897CD2BB4630600DDC1F2 /* Sources */,
 				DE0897CE2BB4630600DDC1F2 /* Frameworks */,
 				DE0897CF2BB4630600DDC1F2 /* Resources */,
+				DE8A7DE92BB7075700DD823F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DE8A7DE62BB7075700DD823F /* PBXTargetDependency */,
 			);
 			name = MovieNight;
 			productName = MovieNight;
@@ -338,6 +472,43 @@
 			productReference = DE0897E12BB4630700DDC1F2 /* MovieNightTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DE8A7DD32BB7075700DD823F /* CoreKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE8A7DEE2BB7075700DD823F /* Build configuration list for PBXNativeTarget "CoreKit" */;
+			buildPhases = (
+				DE8A7DCF2BB7075700DD823F /* Headers */,
+				DE8A7DD02BB7075700DD823F /* Sources */,
+				DE8A7DD12BB7075700DD823F /* Frameworks */,
+				DE8A7DD22BB7075700DD823F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreKit;
+			productName = CoreKit;
+			productReference = DE8A7DD42BB7075700DD823F /* CoreKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DE8A7DDA2BB7075700DD823F /* CoreKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE8A7DEF2BB7075700DD823F /* Build configuration list for PBXNativeTarget "CoreKitTests" */;
+			buildPhases = (
+				DE8A7DD72BB7075700DD823F /* Sources */,
+				DE8A7DD82BB7075700DD823F /* Frameworks */,
+				DE8A7DD92BB7075700DD823F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE8A7DDE2BB7075700DD823F /* PBXTargetDependency */,
+				DE8A7DE02BB7075700DD823F /* PBXTargetDependency */,
+			);
+			name = CoreKitTests;
+			productName = CoreKitTests;
+			productReference = DE8A7DDB2BB7075700DD823F /* CoreKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -352,6 +523,14 @@
 						CreatedOnToolsVersion = 15.0.1;
 					};
 					DE0897E02BB4630700DDC1F2 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = DE0897D02BB4630600DDC1F2;
+					};
+					DE8A7DD32BB7075700DD823F = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+					DE8A7DDA2BB7075700DD823F = {
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = DE0897D02BB4630600DDC1F2;
 					};
@@ -372,6 +551,8 @@
 			targets = (
 				DE0897D02BB4630600DDC1F2 /* MovieNight */,
 				DE0897E02BB4630700DDC1F2 /* MovieNightTests */,
+				DE8A7DD32BB7075700DD823F /* CoreKit */,
+				DE8A7DDA2BB7075700DD823F /* CoreKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -393,6 +574,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DE0897DF2BB4630700DDC1F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8A7DD22BB7075700DD823F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8A7DD92BB7075700DD823F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,6 +643,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE8A7DD02BB7075700DD823F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8A7DF42BB709B700DD823F /* Movies.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8A7DD72BB7075700DD823F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8A7DE32BB7075700DD823F /* CoreKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -455,6 +666,21 @@
 			isa = PBXTargetDependency;
 			target = DE0897D02BB4630600DDC1F2 /* MovieNight */;
 			targetProxy = DE0897E22BB4630700DDC1F2 /* PBXContainerItemProxy */;
+		};
+		DE8A7DDE2BB7075700DD823F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE8A7DD32BB7075700DD823F /* CoreKit */;
+			targetProxy = DE8A7DDD2BB7075700DD823F /* PBXContainerItemProxy */;
+		};
+		DE8A7DE02BB7075700DD823F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE0897D02BB4630600DDC1F2 /* MovieNight */;
+			targetProxy = DE8A7DDF2BB7075700DD823F /* PBXContainerItemProxy */;
+		};
+		DE8A7DE62BB7075700DD823F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE8A7DD32BB7075700DD823F /* CoreKit */;
+			targetProxy = DE8A7DE52BB7075700DD823F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -581,6 +807,7 @@
 		DE0897F62BB4630800DDC1F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +829,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mostafa.co.MovieNight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -611,6 +841,7 @@
 		DE0897F72BB4630800DDC1F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -632,6 +863,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mostafa.co.MovieNight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -678,6 +912,121 @@
 			};
 			name = Release;
 		};
+		DE8A7DEA2BB7075700DD823F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FHTKKF56J6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = mostafa.co.CoreKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE8A7DEB2BB7075700DD823F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FHTKKF56J6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = mostafa.co.CoreKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE8A7DEC2BB7075700DD823F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FHTKKF56J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mostafa.co.CoreKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieNight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieNight";
+			};
+			name = Debug;
+		};
+		DE8A7DED2BB7075700DD823F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FHTKKF56J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mostafa.co.CoreKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieNight.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieNight";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -704,6 +1053,24 @@
 			buildConfigurations = (
 				DE0897F92BB4630800DDC1F2 /* Debug */,
 				DE0897FA2BB4630800DDC1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE8A7DEE2BB7075700DD823F /* Build configuration list for PBXNativeTarget "CoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE8A7DEA2BB7075700DD823F /* Debug */,
+				DE8A7DEB2BB7075700DD823F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE8A7DEF2BB7075700DD823F /* Build configuration list for PBXNativeTarget "CoreKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE8A7DEC2BB7075700DD823F /* Debug */,
+				DE8A7DED2BB7075700DD823F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
