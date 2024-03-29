@@ -19,11 +19,11 @@ final class HomeViewModel: GoToMovieDetailsView {
         self.view = .root
     }
 
-    func navigateToMovieDetailsView(by movieId: String) {
-        view = .movieDetails
+    func navigateToMovieDetailsView(by movieId: Int) {
+        view = .movieDetails(id: movieId)
     }
 }
 
 protocol GoToMovieDetailsView {
-    func navigateToMovieDetailsView(by movieId: String)
+    func navigateToMovieDetailsView(by movieId: Int)
 }

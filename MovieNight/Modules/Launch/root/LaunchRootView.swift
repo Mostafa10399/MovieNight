@@ -14,10 +14,15 @@ struct LaunchRootView: View {
     var body: some View {
         Image(.launchBackground)
             .resizable()
+            .aspectRatio(3/6, contentMode: .fill)
             .ignoresSafeArea()
             .onAppear{
                 viewModel.viewDidAppear()
             }
     }
+}
+
+#Preview {
+    LaunchRootView(viewModel: LaunchRootViewModel(goToHomeNavigationView: MainViewModel()))
 }
 

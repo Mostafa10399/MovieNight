@@ -9,5 +9,5 @@ import Foundation
 
 enum HomeView {
     case root
-    case movieDetails
+    case movieDetails(id: Int)
 }

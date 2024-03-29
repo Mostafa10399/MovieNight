@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct HomeRootView: View {
+    
+    // MARK: - Properties
+    
+    @ObservedObject var viewModel: HomeRootViewModel
+    
+    // MARK: - CodeView
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    HomeRootView()
+    HomeRootView(viewModel: HomeRootViewModel())
 }

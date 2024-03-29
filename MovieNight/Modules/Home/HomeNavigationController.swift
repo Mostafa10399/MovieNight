@@ -5,7 +5,7 @@
 //  Created by Mostafa Mahmoud on 27/03/2024.
 //
 
-import Foundation
+import SwiftUI
 import Combine
 
 final class HomeNavigationController: NiblessNavigationController {
@@ -14,7 +14,7 @@ final class HomeNavigationController: NiblessNavigationController {
     
     private let viewModel: HomeViewModel
     private let homeRootView: HomeRootView
-    private let makeDessertDetailsView: ((String) -> DessertDetailsView)
+    private let makeMovieDetailsView: ((Int) -> MovieDetailsView)
     private var cancellable: Set<AnyCancellable>
     
     // MARK: - Methods
@@ -22,10 +22,10 @@ final class HomeNavigationController: NiblessNavigationController {
     init(
         viewModel: HomeViewModel,
         homeRootView: HomeRootView,
-        dessertDetailsViewFactory: @escaping (String) -> DessertDetailsView) {
+        movieDetailsViewFactory: @escaping (Int) -> MovieDetailsView) {
             self.viewModel = viewModel
             self.homeRootView = homeRootView
-            self.makeDessertDetailsView = dessertDetailsViewFactory
+            self.makeMovieDetailsView = movieDetailsViewFactory
             self.cancellable = []
             super.init()
             let vc = UIHostingController(rootView: homeRootView)
@@ -47,12 +47,12 @@ final class HomeNavigationController: NiblessNavigationController {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.titleTextAttributes = [
-            .foregroundColor: UIColor.black12,
-            .font: UIFont(name: "Poppins-SemiBold", size: 16) ?? .systemFont(ofSize: 16)
+            .foregroundColor: UIColor.black,
+            .font: UIFont(name: "Montserrat-SemiBold", size: 16) ?? .systemFont(ofSize: 16)
         ]
         appearance.largeTitleTextAttributes = [
-            .foregroundColor: UIColor.black12,
-            .font: UIFont(name: "Poppins-Bold", size: 24) ?? .systemFont(ofSize: 24)
+            .foregroundColor: UIColor.black,
+            .font: UIFont(name: "Montserrat-Bold", size: 24) ?? .systemFont(ofSize: 24)
         ]
         appearance.shadowImage = UIImage()
         appearance.shadowColor = .clear
@@ -80,8 +80,8 @@ final class HomeNavigationController: NiblessNavigationController {
         switch view {
         case .root:
             presentHomeRootView()
-        case let .dessertDetails(dessertId):
-            presentDessertDetailsView(id: dessertId)
+        case let .movieDetails(id):
+            presentMovieDetailsView(id: id)
         }
     }
     
@@ -89,8 +89,8 @@ final class HomeNavigationController: NiblessNavigationController {
         self.navigationController?.popToRootViewController(animated: false)
     }
     
-    private func presentDessertDetailsView(id: String) {
-        let vc = UIHostingController(rootView: makeDessertDetailsView(id)).with { $0.modalPresentationStyle = .overFullScreen }
+    private func presentMovieDetailsView(id: Int) {
+        let vc = UIHostingController(rootView: makeMovieDetailsView(id)).with { $0.modalPresentationStyle = .overFullScreen }
         pushViewController(vc, animated: true)
     }
     
