@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 import UIKit
 
-final class LaunchNavigationController: NiblessViewController {
+final class LaunchNavigationController: NiblessNavigationController {
     
     // MARK: - Properties
     
@@ -18,6 +18,12 @@ final class LaunchNavigationController: NiblessViewController {
     private var cancellable: Set<AnyCancellable>
     
     // MARK: - Methods
+    
+    override func loadView() {
+        super.loadView()
+        let vc = UIHostingController(rootView: lunchRootView) .with { $0.modalPresentationStyle = .overCurrentContext }
+        viewControllers = [vc]
+    }
     
     init(
         viewModel: LaunchViewModel,
@@ -55,8 +61,7 @@ final class LaunchNavigationController: NiblessViewController {
     }
     
     private func presetLaunchRootView() {
-        let vc = UIHostingController(rootView: self.lunchRootView).with { $0.modalPresentationStyle = .overFullScreen }
-        self.addFullScreen(childViewController: vc, animation: false)
+        popToRootViewController(animated: false)
     }
     
 }

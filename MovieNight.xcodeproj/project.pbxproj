@@ -46,6 +46,7 @@
 		DE4E43282BB5A6F2008D405D /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE4E43272BB5A6F2008D405D /* Montserrat-Medium.ttf */; };
 		DE4E432B2BB5A6FE008D405D /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE4E43292BB5A6FE008D405D /* Montserrat-Regular.ttf */; };
 		DE4E432C2BB5A6FE008D405D /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE4E432A2BB5A6FE008D405D /* Montserrat-SemiBold.ttf */; };
+		DE8A7DCD2BB6580A00DD823F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8A7DCC2BB6580A00DD823F /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		DE4E43272BB5A6F2008D405D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		DE4E43292BB5A6FE008D405D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		DE4E432A2BB5A6FE008D405D /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		DE8A7DCC2BB6580A00DD823F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				DE0898112BB4651500DDC1F2 /* Extenstions */,
 				DE0898032BB4640000DDC1F2 /* Fonts */,
 				DE0897FF2BB4639700DDC1F2 /* Modules */,
+				DE8A7DCE2BB6581C00DD823F /* StoryBoards */,
 				DE0897FE2BB4635B00DDC1F2 /* CoreKit */,
 				DE0897D82BB4630700DDC1F2 /* Assets.xcassets */,
 				DE0897DA2BB4630700DDC1F2 /* Preview Content */,
@@ -289,6 +292,14 @@
 			path = MovieDetails;
 			sourceTree = "<group>";
 		};
+		DE8A7DCE2BB6581C00DD823F /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7DCC2BB6580A00DD823F /* Launch Screen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,6 +383,7 @@
 			files = (
 				DE4E432B2BB5A6FE008D405D /* Montserrat-Regular.ttf in Resources */,
 				DE4E43262BB5A6E8008D405D /* Montserrat-ExtraLight.ttf in Resources */,
+				DE8A7DCD2BB6580A00DD823F /* Launch Screen.storyboard in Resources */,
 				DE4E432C2BB5A6FE008D405D /* Montserrat-SemiBold.ttf in Resources */,
 				DE4E43242BB5A6D8008D405D /* Montserrat-Bold.ttf in Resources */,
 				DE4E43282BB5A6F2008D405D /* Montserrat-Medium.ttf in Resources */,
@@ -579,7 +591,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieNight/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -609,7 +621,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieNight/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

@@ -65,7 +65,7 @@ final class MainNavigationController: NiblessViewController {
             guard let strongSelf = self else { return }
             strongSelf.launchNavigationController = strongSelf.makeLaunchNavigationController()
             guard let launchNavigationController = strongSelf.launchNavigationController else { return }
-            strongSelf.addFullScreen(childViewController: launchNavigationController, animation: true)
+            strongSelf.addFullScreen(childViewController: launchNavigationController, animation: false)
             strongSelf.remove(childViewController: strongSelf.homeNavigationController)
         }
     }
