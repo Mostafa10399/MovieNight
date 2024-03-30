@@ -24,8 +24,8 @@ struct MovieSection: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack {
                     ForEach(section.movies, id: \.id) { movie in
-                        AsyncImage(url: movie.thumbnail, transaction: .init(animation: .bouncy(duration: 1)), content: { p in
-                            switch p {
+                        AsyncImage(url: movie.thumbnail, transaction: .init(animation: .bouncy(duration: 0.2)), content: { state in
+                            switch state {
                             case .empty:
                                  ZStack {
                                      Color.gray.opacity(0.4)
@@ -35,7 +35,7 @@ struct MovieSection: View {
                                 image
                                     .resizable()
                             case .failure(_):
-                                Image(.launchBackground)
+                                Image(systemName: "photo")
                                     .resizable()
                             @unknown default:
                                 EmptyView()
