@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol ScreenStateProtocol: AnyObject {
+protocol BaseViewModel: AnyObject {
     var isDataLoading: Bool { set get }
     var errorMessage: ErrorMessage? { set get }
     func setIsDataLoading(_ value: Bool)
     func setErrorMessage(_ value: ErrorMessage?)
 }
 
-extension ScreenStateProtocol {
+extension BaseViewModel {
      func setIsDataLoading(_ value: Bool) {
         DispatchQueue
             .main

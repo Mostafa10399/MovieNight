@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreKit
 
 final class HomeDependencyContainer {
     
@@ -37,7 +38,7 @@ final class HomeDependencyContainer {
             movieDetailsViewFactory: movieDetailsViewFactory)
     }
     private func makeHomeRootViewModel() -> HomeRootViewModel {
-        HomeRootViewModel()
+        HomeRootViewModel(discoverRepository: makeDiscoverRepository())
     }
     
     private func makeHomeRootView(viewModel: HomeRootViewModel) -> HomeRootView {
@@ -50,6 +51,10 @@ final class HomeDependencyContainer {
     
     private func makeMovieDetailsView(viewModel: MovieDetailsViewModel) -> MovieDetailsView {
         MovieDetailsView(viewModel: viewModel)
+    }
+    
+    private func makeDiscoverRepository() -> DiscoverRepository {
+        MainDiscoverRepository(remoteApis: MovieNightDiscoverApis())
     }
     
 

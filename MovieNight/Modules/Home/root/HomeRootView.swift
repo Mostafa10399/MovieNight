@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreKit
 
 struct HomeRootView: View {
     
@@ -20,38 +21,32 @@ struct HomeRootView: View {
         GeometryReader { geo in
             ScrollView(showsIndicators: false) {
                 LazyVStack(spacing: 20) {
-                    
+                    viewModel.nowPlayingMoviesSection.map { section in
+                        MovieSection(section: section)
+                    }
+                    viewModel.upComingMoviesSection.map { section in
+                        MovieSection(section: section)
+                    }
+                    viewModel.popularMoviesSection.map { section in
+                        MovieSection(section: section)
+                    }
                 }
             }
         }
-        .frame(maxHeight: .infinity)
-        .padding(.horizontal, 12)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+//        .padding(.horizontal, 16)
         .navigationTitle("Find a Movie To Watch")
         .onAppear {
             if didAppear {
+                viewModel.getData()
                 self.didAppear = false
             }
         }
-//        .displayLoader(isLoading: viewModel.isDataLoading)
+        .displayLoader(isLoading: viewModel.isDataLoading)
 //        .displayError(errorMessage: viewModel.errorMessage, isFullScreen: false) {
 //            viewModel.didTapOnTryAgain()
 //        }
     }
     
-    // MARK: - Methods
-    
-    func makeMovieList(_ listName: String, movies: [String]) -> some View {
-        VStack(spacing: 12) {
-            Text(listName)
-                .font(.custom("Montserrat-SemiBold", size: 14))
-                .frame(maxWidth: .infinity, alignment: .leading)
-            List(movies, id: \.self) { item in
-             Text("Hello")
-            }
-        }
-    }
 }
 
-#Preview {
-    HomeRootView(viewModel: HomeRootViewModel())
-}

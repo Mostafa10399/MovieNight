@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoaderView: View {
     var body: some View {
-        Color.white
+        Color.black
             .edgesIgnoringSafeArea(.all)
             .overlay {
                 ProgressView()
@@ -17,7 +17,7 @@ struct LoaderView: View {
                     .scaleEffect(1.74)
                     .frame(width: 150, height: 150)
                     .tint(.white)
-                    .background(Color(.black).opacity(0.2))
+                    .background(Color(.white).opacity(0.2))
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             }
     }
