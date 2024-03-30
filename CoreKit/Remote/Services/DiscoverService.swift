@@ -20,17 +20,23 @@ extension DiscoverService: MovieNightService {
     public var requestConfiguration: RequestConfiguration {
         switch self {
         case let .getNowPlaying(token):
+            let parameters = ["api_key": token]
             return RequestConfiguration(
                 path: mainRoute.appending("now_playing"),
-                headers: [HTTPHeader(name: "Authorization", value: "Bearer \(token)")])
+                parameters: parameters,
+                encoding: .json)
         case let .getUpComing(token):
+            let parameters = ["api_key": token]
             return RequestConfiguration(
                 path: mainRoute.appending("upcoming"),
-                headers: [HTTPHeader(name: "Authorization", value: "Bearer \(token)")])
+                parameters: parameters,
+                encoding: .json)
         case let .getPopular(token):
+            let parameters = ["api_key": token]
             return RequestConfiguration(
                 path: mainRoute.appending("popular"),
-                headers: [HTTPHeader(name: "Authorization", value: "Bearer \(token)")])
+                parameters:  parameters,
+                encoding: .json)
         }
     }
 }

@@ -66,6 +66,9 @@
 		DE8A7E142BB75E5C00DD823F /* DiscoverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E132BB75E5C00DD823F /* DiscoverRepository.swift */; };
 		DE8A7E162BB75E9000DD823F /* MainDiscoverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E152BB75E9000DD823F /* MainDiscoverRepository.swift */; };
 		DE8A7E182BB767EC00DD823F /* Bundle+infoForKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E172BB767EC00DD823F /* Bundle+infoForKey.swift */; };
+		DE8A7E1B2BB792C500DD823F /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E1A2BB792C500DD823F /* ParameterEncoding.swift */; };
+		DE8A7E1D2BB792F500DD823F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E1C2BB792F500DD823F /* HTTPMethod.swift */; };
+		DE8A7E1F2BB7933000DD823F /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E1E2BB7933000DD823F /* HTTPHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,8 +166,6 @@
 		DE8A7DE22BB7075700DD823F /* CoreKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreKitTests.swift; sourceTree = "<group>"; };
 		DE8A7DF32BB709B700DD823F /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		DE8A7DF62BB70C8B00DD823F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		DE8A7DF82BB71AC500DD823F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		DE8A7DF92BB71B6400DD823F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DE8A7DFC2BB71C3900DD823F /* RequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
 		DE8A7DFF2BB737F500DD823F /* RemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
 		DE8A7E022BB73F7D00DD823F /* String+url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+url.swift"; sourceTree = "<group>"; };
@@ -177,6 +178,10 @@
 		DE8A7E132BB75E5C00DD823F /* DiscoverRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRepository.swift; sourceTree = "<group>"; };
 		DE8A7E152BB75E9000DD823F /* MainDiscoverRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDiscoverRepository.swift; sourceTree = "<group>"; };
 		DE8A7E172BB767EC00DD823F /* Bundle+infoForKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+infoForKey.swift"; sourceTree = "<group>"; };
+		DE8A7E1A2BB792C500DD823F /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		DE8A7E1C2BB792F500DD823F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		DE8A7E1E2BB7933000DD823F /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		DE8A7E252BB8473000DD823F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,9 +404,9 @@
 		DE8A7DD52BB7075700DD823F /* CoreKit */ = {
 			isa = PBXGroup;
 			children = (
-				DE8A7DF92BB71B6400DD823F /* Info.plist */,
 				DE8A7DD62BB7075700DD823F /* CoreKit.h */,
-				DE8A7DF82BB71AC500DD823F /* Config.xcconfig */,
+				DE8A7E252BB8473000DD823F /* Config.xcconfig */,
+				DE8A7E192BB7929200DD823F /* Network */,
 				DE8A7E012BB73F6C00DD823F /* Extension */,
 				DE8A7DF02BB7095D00DD823F /* Repository */,
 				DE8A7DF12BB7098400DD823F /* Remote */,
@@ -497,6 +502,16 @@
 				DE8A7E112BB75D7F00DD823F /* MovieNightDiscoverApis.swift */,
 			);
 			path = DiscoverApis;
+			sourceTree = "<group>";
+		};
+		DE8A7E192BB7929200DD823F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7E1A2BB792C500DD823F /* ParameterEncoding.swift */,
+				DE8A7E1C2BB792F500DD823F /* HTTPMethod.swift */,
+				DE8A7E1E2BB7933000DD823F /* HTTPHeader.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -725,13 +740,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8A7E1B2BB792C500DD823F /* ParameterEncoding.swift in Sources */,
 				DE8A7E0E2BB75C0200DD823F /* RemoteAPI.swift in Sources */,
 				DE8A7E182BB767EC00DD823F /* Bundle+infoForKey.swift in Sources */,
 				DE8A7E052BB7428000DD823F /* MovieNightService.swift in Sources */,
+				DE8A7E1F2BB7933000DD823F /* HTTPHeader.swift in Sources */,
 				DE8A7E032BB73F7D00DD823F /* String+url.swift in Sources */,
 				DE8A7E162BB75E9000DD823F /* MainDiscoverRepository.swift in Sources */,
 				DE8A7DF42BB709B700DD823F /* Movies.swift in Sources */,
 				DE8A7E102BB75CFB00DD823F /* MoviesResult.swift in Sources */,
+				DE8A7E1D2BB792F500DD823F /* HTTPMethod.swift in Sources */,
 				DE8A7E122BB75D7F00DD823F /* MovieNightDiscoverApis.swift in Sources */,
 				DE8A7E142BB75E5C00DD823F /* DiscoverRepository.swift in Sources */,
 				DE8A7E002BB737F500DD823F /* RemoteService.swift in Sources */,
