@@ -18,6 +18,53 @@
             endingLineNumber = "28"
             landmarkName = "getData()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "66AF7773-5718-466E-9102-C1142190A427 - 2383104386ac34c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieNight.HomeRootViewModel.__allocating_init(discoverRepository: CoreKit.DiscoverRepository) -&gt; MovieNight.HomeRootViewModel"
+                  moduleName = "MovieNight"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "66AF7773-5718-466E-9102-C1142190A427 - a4c717fd701076bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieNight.HomeRootViewModel.init(discoverRepository: CoreKit.DiscoverRepository) -&gt; MovieNight.HomeRootViewModel"
+                  moduleName = "MovieNight"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "66AF7773-5718-466E-9102-C1142190A427 - a4c717fd701076bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieNight.HomeRootViewModel.init(discoverRepository: CoreKit.DiscoverRepository) -&gt; MovieNight.HomeRootViewModel"
+                  moduleName = "MovieNight"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
