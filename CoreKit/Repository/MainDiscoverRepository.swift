@@ -26,12 +26,12 @@ public final class MainDiscoverRepository: DiscoverRepository {
     }
     
     public func getUpComing() async throws -> Movies? {
-        guard let token = Bundle.main.infoDictionary?["API_KEY"] as? String else { return nil }
+        guard let token = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
         return try await remoteApis.getUpComing(token: token)
     }
     
     public func getPopular() async throws -> Movies? {
-        guard let token = Bundle.main.infoDictionary?["API_KEY"] as? String else { return nil }
+        guard let token = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
         return try await remoteApis.getPopular(token: token)
     }
     
