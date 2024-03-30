@@ -24,19 +24,19 @@ extension DiscoverService: MovieNightService {
             return RequestConfiguration(
                 path: mainRoute.appending("now_playing"),
                 parameters: parameters,
-                encoding: .json)
+                encoding: .url)
         case let .getUpComing(token):
             let parameters = ["api_key": token]
             return RequestConfiguration(
                 path: mainRoute.appending("upcoming"),
                 parameters: parameters,
-                encoding: .json)
+                encoding: .url)
         case let .getPopular(token):
             let parameters = ["api_key": token]
             return RequestConfiguration(
                 path: mainRoute.appending("popular"),
                 parameters:  parameters,
-                encoding: .json)
+                encoding: .url)
         }
     }
 }

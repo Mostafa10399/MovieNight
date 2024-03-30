@@ -38,7 +38,7 @@ extension AppDelegate{
                 window.makeKeyAndVisible()
             }
         if #available(iOS 13.0, *) {
-            window?.overrideUserInterfaceStyle = .light
+            window?.overrideUserInterfaceStyle = .dark
         }
             UINavigationBar.appearance().isHidden = navigationBarHidden
         }

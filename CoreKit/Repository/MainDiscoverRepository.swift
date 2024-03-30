@@ -22,7 +22,6 @@ public final class MainDiscoverRepository: DiscoverRepository {
     
     public func getNowPlaying() async throws -> Movies? {
         guard let token = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
-        print(token)
         return try await remoteApis.getNowPlaying(token: token)
     }
     

@@ -69,6 +69,8 @@
 		DE8A7E1B2BB792C500DD823F /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E1A2BB792C500DD823F /* ParameterEncoding.swift */; };
 		DE8A7E1D2BB792F500DD823F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E1C2BB792F500DD823F /* HTTPMethod.swift */; };
 		DE8A7E1F2BB7933000DD823F /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E1E2BB7933000DD823F /* HTTPHeader.swift */; };
+		DEFED2142BB8517100A61DB8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFED2132BB8517100A61DB8 /* LoaderView.swift */; };
+		DEFED2162BB8518700A61DB8 /* ErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFED2152BB8518700A61DB8 /* ErrorMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +184,8 @@
 		DE8A7E1C2BB792F500DD823F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		DE8A7E1E2BB7933000DD823F /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
 		DE8A7E252BB8473000DD823F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		DEFED2132BB8517100A61DB8 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		DEFED2152BB8518700A61DB8 /* ErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,7 @@
 		DE0897C82BB4630600DDC1F2 = {
 			isa = PBXGroup;
 			children = (
+				DE8A7E262BB84C4900DD823F /* Enviroments */,
 				DE0897D32BB4630600DDC1F2 /* MovieNight */,
 				DE0897E42BB4630700DDC1F2 /* MovieNightTests */,
 				DE8A7DD52BB7075700DD823F /* CoreKit */,
@@ -247,6 +252,7 @@
 			children = (
 				DE08980E2BB4646F00DDC1F2 /* Info.plist */,
 				DE0897D42BB4630600DDC1F2 /* AppDelegate.swift */,
+				DEFED2122BB8515B00A61DB8 /* Reusable */,
 				DE08982E2BB4673C00DDC1F2 /* NiblessComponent */,
 				DE0898112BB4651500DDC1F2 /* Extenstions */,
 				DE0898032BB4640000DDC1F2 /* Fonts */,
@@ -405,7 +411,6 @@
 			isa = PBXGroup;
 			children = (
 				DE8A7DD62BB7075700DD823F /* CoreKit.h */,
-				DE8A7E252BB8473000DD823F /* Config.xcconfig */,
 				DE8A7E192BB7929200DD823F /* Network */,
 				DE8A7E012BB73F6C00DD823F /* Extension */,
 				DE8A7DF02BB7095D00DD823F /* Repository */,
@@ -512,6 +517,23 @@
 				DE8A7E1E2BB7933000DD823F /* HTTPHeader.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		DE8A7E262BB84C4900DD823F /* Enviroments */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7E252BB8473000DD823F /* Config.xcconfig */,
+			);
+			path = Enviroments;
+			sourceTree = "<group>";
+		};
+		DEFED2122BB8515B00A61DB8 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				DEFED2132BB8517100A61DB8 /* LoaderView.swift */,
+				DEFED2152BB8518700A61DB8 /* ErrorMessageView.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -718,11 +740,13 @@
 				DE08981A2BB4652700DDC1F2 /* UINavigationController+PopToViewController.swift in Sources */,
 				DE08981E2BB4652700DDC1F2 /* ScreenStateProtocol.swift in Sources */,
 				DE08984F2BB46B7500DDC1F2 /* HomeRootView.swift in Sources */,
+				DEFED2162BB8518700A61DB8 /* ErrorMessageView.swift in Sources */,
 				DE08982B2BB4664500DDC1F2 /* LaunchNavigationController.swift in Sources */,
 				DE08983A2BB4685500DDC1F2 /* LaunchDependencyContainer.swift in Sources */,
 				DE0898202BB4652700DDC1F2 /* NavigationAction.swift in Sources */,
 				DE0898342BB4674800DDC1F2 /* NiblessView.swift in Sources */,
 				DE0898212BB4652700DDC1F2 /* View+IfModifier.swift in Sources */,
+				DEFED2142BB8517100A61DB8 /* LoaderView.swift in Sources */,
 				DE0898272BB465E900DDC1F2 /* MainViewModel.swift in Sources */,
 				DE0898472BB46A2800DDC1F2 /* HomeDependencyContainer.swift in Sources */,
 			);
@@ -795,6 +819,7 @@
 /* Begin XCBuildConfiguration section */
 		DE0897F32BB4630800DDC1F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8A7E252BB8473000DD823F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -858,6 +883,7 @@
 		};
 		DE0897F42BB4630800DDC1F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8A7E252BB8473000DD823F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
