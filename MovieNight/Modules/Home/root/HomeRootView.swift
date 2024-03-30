@@ -40,10 +40,15 @@ struct HomeRootView: View {
     
     // MARK: - Methods
     
-    func makeMovieList(_ movies: [String]) -> some View {
-       List(movies, id: \.self) { item in
-         Text("Hello")
-       }
+    func makeMovieList(_ listName: String, movies: [String]) -> some View {
+        VStack(spacing: 12) {
+            Text(listName)
+                .font(.custom("Montserrat-SemiBold", size: 14))
+                .frame(maxWidth: .infinity, alignment: .leading)
+            List(movies, id: \.self) { item in
+             Text("Hello")
+            }
+        }
     }
 }
 
