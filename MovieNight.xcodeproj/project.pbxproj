@@ -54,6 +54,18 @@
 		DE8A7DE82BB7075700DD823F /* CoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE8A7DD42BB7075700DD823F /* CoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE8A7DF42BB709B700DD823F /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7DF32BB709B700DD823F /* Movies.swift */; };
 		DE8A7DF72BB70C8B00DD823F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8A7DF62BB70C8B00DD823F /* Security.framework */; };
+		DE8A7DFD2BB71C3900DD823F /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7DFC2BB71C3900DD823F /* RequestConfiguration.swift */; };
+		DE8A7E002BB737F500DD823F /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7DFF2BB737F500DD823F /* RemoteService.swift */; };
+		DE8A7E032BB73F7D00DD823F /* String+url.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E022BB73F7D00DD823F /* String+url.swift */; };
+		DE8A7E052BB7428000DD823F /* MovieNightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E042BB7428000DD823F /* MovieNightService.swift */; };
+		DE8A7E072BB7438E00DD823F /* DiscoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E062BB7438E00DD823F /* DiscoverService.swift */; };
+		DE8A7E0C2BB75B6E00DD823F /* DiscoverApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E0B2BB75B6E00DD823F /* DiscoverApis.swift */; };
+		DE8A7E0E2BB75C0200DD823F /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E0D2BB75C0200DD823F /* RemoteAPI.swift */; };
+		DE8A7E102BB75CFB00DD823F /* MoviesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E0F2BB75CFB00DD823F /* MoviesResult.swift */; };
+		DE8A7E122BB75D7F00DD823F /* MovieNightDiscoverApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E112BB75D7F00DD823F /* MovieNightDiscoverApis.swift */; };
+		DE8A7E142BB75E5C00DD823F /* DiscoverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E132BB75E5C00DD823F /* DiscoverRepository.swift */; };
+		DE8A7E162BB75E9000DD823F /* MainDiscoverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E152BB75E9000DD823F /* MainDiscoverRepository.swift */; };
+		DE8A7E182BB767EC00DD823F /* Bundle+infoForKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A7E172BB767EC00DD823F /* Bundle+infoForKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +164,19 @@
 		DE8A7DF32BB709B700DD823F /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		DE8A7DF62BB70C8B00DD823F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		DE8A7DF82BB71AC500DD823F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		DE8A7DF92BB71B6400DD823F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DE8A7DFC2BB71C3900DD823F /* RequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
+		DE8A7DFF2BB737F500DD823F /* RemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
+		DE8A7E022BB73F7D00DD823F /* String+url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+url.swift"; sourceTree = "<group>"; };
+		DE8A7E042BB7428000DD823F /* MovieNightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNightService.swift; sourceTree = "<group>"; };
+		DE8A7E062BB7438E00DD823F /* DiscoverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverService.swift; sourceTree = "<group>"; };
+		DE8A7E0B2BB75B6E00DD823F /* DiscoverApis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverApis.swift; sourceTree = "<group>"; };
+		DE8A7E0D2BB75C0200DD823F /* RemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
+		DE8A7E0F2BB75CFB00DD823F /* MoviesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResult.swift; sourceTree = "<group>"; };
+		DE8A7E112BB75D7F00DD823F /* MovieNightDiscoverApis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNightDiscoverApis.swift; sourceTree = "<group>"; };
+		DE8A7E132BB75E5C00DD823F /* DiscoverRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRepository.swift; sourceTree = "<group>"; };
+		DE8A7E152BB75E9000DD823F /* MainDiscoverRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDiscoverRepository.swift; sourceTree = "<group>"; };
+		DE8A7E172BB767EC00DD823F /* Bundle+infoForKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+infoForKey.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,11 +399,15 @@
 		DE8A7DD52BB7075700DD823F /* CoreKit */ = {
 			isa = PBXGroup;
 			children = (
+				DE8A7DF92BB71B6400DD823F /* Info.plist */,
 				DE8A7DD62BB7075700DD823F /* CoreKit.h */,
 				DE8A7DF82BB71AC500DD823F /* Config.xcconfig */,
+				DE8A7E012BB73F6C00DD823F /* Extension */,
 				DE8A7DF02BB7095D00DD823F /* Repository */,
 				DE8A7DF12BB7098400DD823F /* Remote */,
 				DE8A7DF22BB7098D00DD823F /* DTOs */,
+				DE8A7DFC2BB71C3900DD823F /* RequestConfiguration.swift */,
+				DE8A7E0D2BB75C0200DD823F /* RemoteAPI.swift */,
 			);
 			path = CoreKit;
 			sourceTree = "<group>";
@@ -394,6 +423,8 @@
 		DE8A7DF02BB7095D00DD823F /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				DE8A7E132BB75E5C00DD823F /* DiscoverRepository.swift */,
+				DE8A7E152BB75E9000DD823F /* MainDiscoverRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -401,6 +432,8 @@
 		DE8A7DF12BB7098400DD823F /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				DE8A7DFA2BB71BD700DD823F /* Services */,
+				DE8A7DFB2BB71BDE00DD823F /* Apis */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -409,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				DE8A7DF32BB709B700DD823F /* Movies.swift */,
+				DE8A7E0F2BB75CFB00DD823F /* MoviesResult.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -419,6 +453,50 @@
 				DE8A7DF62BB70C8B00DD823F /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE8A7DFA2BB71BD700DD823F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7DFE2BB7342200DD823F /* Base */,
+				DE8A7E062BB7438E00DD823F /* DiscoverService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DE8A7DFB2BB71BDE00DD823F /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7E0A2BB75B5A00DD823F /* DiscoverApis */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
+		DE8A7DFE2BB7342200DD823F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7DFF2BB737F500DD823F /* RemoteService.swift */,
+				DE8A7E042BB7428000DD823F /* MovieNightService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DE8A7E012BB73F6C00DD823F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7E022BB73F7D00DD823F /* String+url.swift */,
+				DE8A7E172BB767EC00DD823F /* Bundle+infoForKey.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DE8A7E0A2BB75B5A00DD823F /* DiscoverApis */ = {
+			isa = PBXGroup;
+			children = (
+				DE8A7E0B2BB75B6E00DD823F /* DiscoverApis.swift */,
+				DE8A7E112BB75D7F00DD823F /* MovieNightDiscoverApis.swift */,
+			);
+			path = DiscoverApis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -647,7 +725,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8A7E0E2BB75C0200DD823F /* RemoteAPI.swift in Sources */,
+				DE8A7E182BB767EC00DD823F /* Bundle+infoForKey.swift in Sources */,
+				DE8A7E052BB7428000DD823F /* MovieNightService.swift in Sources */,
+				DE8A7E032BB73F7D00DD823F /* String+url.swift in Sources */,
+				DE8A7E162BB75E9000DD823F /* MainDiscoverRepository.swift in Sources */,
 				DE8A7DF42BB709B700DD823F /* Movies.swift in Sources */,
+				DE8A7E102BB75CFB00DD823F /* MoviesResult.swift in Sources */,
+				DE8A7E122BB75D7F00DD823F /* MovieNightDiscoverApis.swift in Sources */,
+				DE8A7E142BB75E5C00DD823F /* DiscoverRepository.swift in Sources */,
+				DE8A7E002BB737F500DD823F /* RemoteService.swift in Sources */,
+				DE8A7E072BB7438E00DD823F /* DiscoverService.swift in Sources */,
+				DE8A7E0C2BB75B6E00DD823F /* DiscoverApis.swift in Sources */,
+				DE8A7DFD2BB71C3900DD823F /* RequestConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,6 +1016,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoreKit/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -965,6 +1056,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoreKit/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
