@@ -8,18 +8,18 @@
 import Foundation
 
 public struct MoviesResult: Codable {
-    let adult: Bool
-    let backdropPath: String
-    let genreIDS: [Int]
-    let id: Int
-    let originalLanguage, originalTitle, overview: String
-    let popularity: Double
-    let posterPath: String?
-    let releaseDate: String?
-    let title: String
-    let video: Bool
-    let voteAverage: Double
-    let voteCount: Int
+    public let adult: Bool
+    public let backdropPath: String
+    public let genreIDS: [Int]
+    public let id: Int
+    public let originalLanguage, originalTitle, overview: String
+    public let popularity: Double
+    public let posterPath: String?
+    public let releaseDate: String?
+    public let title: String
+    public let video: Bool
+    public let voteAverage: Double
+    public let voteCount: Int
 
        enum CodingKeys: String, CodingKey {
            case adult

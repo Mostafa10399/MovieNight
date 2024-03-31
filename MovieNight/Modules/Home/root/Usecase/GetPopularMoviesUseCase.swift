@@ -1,11 +1,12 @@
 //
 //  GetPopularMoviesUseCase.swift
-//  CoreKit
+//  MovieNight
 //
-//  Created by Mostafa Mahmoud on 30/03/2024.
+//  Created by Mostafa Mahmoud on 31/03/2024.
 //
 
 import Foundation
+import CoreKit
 
 public protocol GetPopularMoviesUseCase {
     var discoverRepository: DiscoverRepository { get }

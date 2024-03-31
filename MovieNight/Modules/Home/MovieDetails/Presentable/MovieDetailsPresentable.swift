@@ -1,22 +1,23 @@
 //
 //  MovieDetailsPresentable.swift
-//  CoreKit
+//  MovieNight
 //
-//  Created by Amr Salman on 26/04/2022.
+//  Created by Mostafa Mahmoud on 31/03/2024.
 //
 
 import Foundation
+import CoreKit
 
-public struct MovieDetailsPresentable {
-    public let thumbnail: URL?
-    public let title: String
-    public let overview: String
-    public let revenue: String
-    public let releseYear: String
-    public let status: String
-    public let type: String
-    public let rate: String
-    public let runTime: String
+ struct MovieDetailsPresentable {
+    let thumbnail: URL?
+    let title: String
+    let overview: String
+    let revenue: String
+    let releseYear: String
+    let status: String
+    let type: String
+    let rate: String
+    let runTime: String
     
     init(_ movieTuple: MovieDetails) {
         if let poster = movieTuple.posterPath {

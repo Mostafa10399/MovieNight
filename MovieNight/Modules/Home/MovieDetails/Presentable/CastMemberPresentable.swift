@@ -1,17 +1,18 @@
 //
 //  CastMemberPresentable.swift
-//  CoreKit
+//  MovieNight
 //
-//  Created by Amr Salman on 26/04/2022.
+//  Created by Mostafa Mahmoud on 31/03/2024.
 //
 
 import Foundation
+import CoreKit
 
 public struct CastMemberPresentable {
-    public let profileUrl: URL?
-    public let name: String
-    public let characterName: String
-    public let id: Int
+     let profileUrl: URL?
+     let name: String
+     let characterName: String
+     let id: Int
     
     init(_ item: CastMember) {
         self.id = item.id
@@ -20,7 +21,7 @@ public struct CastMemberPresentable {
         } else {
             profileUrl = nil
         }
-        self.name = item.name ?? ""
+        self.name = item.name 
         self.characterName = item.character ?? ""
     }
 }

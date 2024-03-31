@@ -1,18 +1,19 @@
 //
 //  MovieListPresentable.swift
-//  CoreKit
+//  MovieNight
 //
-//  Created by Amr Salman on 25/04/2022.
+//  Created by Mostafa Mahmoud on 31/03/2024.
 //
 
 import Foundation
+import CoreKit
 
 public struct MovieListPresentable {
-    public let thumbnail: URL?
-    public let title: String
-    public let overview: String
-    public let year: String
-    public let id: Int
+    let thumbnail: URL?
+    let title: String
+    let overview: String
+    let year: String
+    let id: Int
     
     init(_ movieTuple: MoviesResult) {
         self.id = movieTuple.id

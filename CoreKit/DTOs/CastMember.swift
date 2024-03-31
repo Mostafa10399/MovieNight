@@ -8,16 +8,16 @@
 import Foundation
 
 public struct CastMember: Codable {
-    let adult: Bool
-    let gender, id: Int
-    let name, originalName: String
-    let popularity: Double
-    let profilePath: String?
-    let castID: Int?
-    let character: String?
-    let creditID: String
-    let order: Int?
-    let department, job: String?
+    public let adult: Bool
+    public let gender, id: Int
+    public let name, originalName: String
+    public let popularity: Double
+    public let profilePath: String?
+    public let castID: Int?
+    public let character: String?
+    public let creditID: String
+    public let order: Int?
+    public let department, job: String?
     
     enum CodingKeys: String, CodingKey {
         case adult, gender, id

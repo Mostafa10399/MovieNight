@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Credits: Codable {
-    let id: Int
-    let crew: [CrewMember]
-    let cast: [CastMember]
+    public let id: Int
+    public let crew: [CrewMember]
+    public let cast: [CastMember]
 }
