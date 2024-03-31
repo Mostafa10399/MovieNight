@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreKit
 
 struct ErrorMessageView: View {
     var imageName: String
@@ -23,11 +24,10 @@ struct ErrorMessageView: View {
                     .padding(12)
                 VStack(alignment: .center, spacing: 10) {
                     Text(title)
-                        .font(.custom("Poppins-Bold", size: 20))
+                        .font(.custom("Montserrat-Bold", size: 20))
                         .foregroundStyle(.black)
-                    
                     Text(message)
-                        .font(.custom("Poppins-Regular", size: 16))
+                        .font(.custom("Montserrat-Regular", size: 16))
                         .foregroundStyle(.black)
                 }
             Button {
@@ -36,13 +36,13 @@ struct ErrorMessageView: View {
                 HStack(alignment: .center) {
                     Spacer()
                     Text("Try Again")
-                        .font(.custom("Poppins-Medium", size: 20))
+                        .font(.custom("Montserrat-Medium", size: 20))
                         .foregroundStyle(.white)
                         .padding(.vertical, 16)
                     Spacer()
                 }
             }
-            .background(Color(.accent))
+            .background(LinearGradient(colors: [Color(.lightRed), Color(.darkRed)], startPoint: .top, endPoint: .bottom))
             .clipShape(RoundedRectangle(cornerRadius: 8))
             
         }

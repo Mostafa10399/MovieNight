@@ -26,7 +26,7 @@ public final class MovieNightDiscoverApis: DiscoverApis {
     }
     
     public func getPopular(auth: String) async throws -> Movies {
-        try await request(DiscoverService.getUpComing(auth: auth))
+        try await request(DiscoverService.getPopular(auth: auth))
     }
     
     public func getMovieDetails(auth: String, id: Int) async throws -> MovieDetails {

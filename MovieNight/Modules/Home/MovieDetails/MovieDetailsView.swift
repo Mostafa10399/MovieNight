@@ -106,6 +106,9 @@ struct MovieDetailsView: View {
             .padding(.bottom)
         })
         .frame(maxHeight: .infinity)
+        .displayError(errorMessage: viewModel.errorMessage, isFullScreen: false) {
+            viewModel.didTapOnTryAgain()
+        }
         .onAppear {
             if didAppear {
                 viewModel.getMovieDetails()
@@ -113,9 +116,7 @@ struct MovieDetailsView: View {
             }
         }
         .displayLoader(isLoading: viewModel.isDataLoading)
-//        .displayError(errorMessage: viewModel.errorMessage, isFullScreen: false) {
-//            viewModel.didTapOnTryAgain()
-//        }
+ 
     }
 }
 

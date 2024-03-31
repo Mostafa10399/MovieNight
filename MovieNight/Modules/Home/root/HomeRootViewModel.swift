@@ -63,4 +63,9 @@ final class HomeRootViewModel: ObservableObject, BaseViewModel, GetPopularMovies
         self.goToMovieDetails.navigateToMovieDetailsView(by: id)
     }
     
+    func didTapOnTryAgain() {
+        self.setErrorMessage(nil)
+        self.getData()
+    }
+    
 }

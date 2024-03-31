@@ -101,6 +101,7 @@
 		DEE73B982BB92BC400E430E5 /* AsyncTest+UnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B972BB92BC400E430E5 /* AsyncTest+UnitTest.swift */; };
 		DEE73B9A2BB92C6800E430E5 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B992BB92C6800E430E5 /* Errors.swift */; };
 		DEE73B9D2BB93B2B00E430E5 /* SpyGetUpcomingMoviesUsecase_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B9C2BB93B2B00E430E5 /* SpyGetUpcomingMoviesUsecase_Tests.swift */; };
+		DEE73BA92BB9551900E430E5 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73BA82BB9551900E430E5 /* ErrorMessage.swift */; };
 		DEFED2142BB8517100A61DB8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFED2132BB8517100A61DB8 /* LoaderView.swift */; };
 		DEFED2162BB8518700A61DB8 /* ErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFED2152BB8518700A61DB8 /* ErrorMessageView.swift */; };
 /* End PBXBuildFile section */
@@ -248,6 +249,7 @@
 		DEE73B972BB92BC400E430E5 /* AsyncTest+UnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncTest+UnitTest.swift"; sourceTree = "<group>"; };
 		DEE73B992BB92C6800E430E5 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		DEE73B9C2BB93B2B00E430E5 /* SpyGetUpcomingMoviesUsecase_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyGetUpcomingMoviesUsecase_Tests.swift; sourceTree = "<group>"; };
+		DEE73BA82BB9551900E430E5 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		DEFED2132BB8517100A61DB8 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		DEFED2152BB8518700A61DB8 /* ErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -578,6 +580,7 @@
 				DE8A7E022BB73F7D00DD823F /* String+url.swift */,
 				DE8A7E172BB767EC00DD823F /* Bundle+infoForKey.swift */,
 				DEE73B992BB92C6800E430E5 /* Errors.swift */,
+				DEE73BA82BB9551900E430E5 /* ErrorMessage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -976,6 +979,7 @@
 				DE8A7E0E2BB75C0200DD823F /* RemoteAPI.swift in Sources */,
 				DE8A7E182BB767EC00DD823F /* Bundle+infoForKey.swift in Sources */,
 				DE8A7E052BB7428000DD823F /* MovieNightService.swift in Sources */,
+				DEE73BA92BB9551900E430E5 /* ErrorMessage.swift in Sources */,
 				DE8A7E1F2BB7933000DD823F /* HTTPHeader.swift in Sources */,
 				DE8A7E032BB73F7D00DD823F /* String+url.swift in Sources */,
 				DE8A7E162BB75E9000DD823F /* MainDiscoverRepository.swift in Sources */,

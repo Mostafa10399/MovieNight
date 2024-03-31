@@ -99,4 +99,9 @@ final class MovieDetailsViewModel: ObservableObject, BaseViewModel, GetMovieDeta
     private func setMovieRunTime(_ duration: String) {
         self.runTime = duration
     }
+    
+    func didTapOnTryAgain() {
+        self.setErrorMessage(nil)
+        self.getMovieDetails()
+    }
 }
