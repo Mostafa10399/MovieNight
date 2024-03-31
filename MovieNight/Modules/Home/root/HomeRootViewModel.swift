@@ -41,8 +41,8 @@ final class HomeRootViewModel: ObservableObject, BaseViewModel, GetPopularMovies
                 strongSelf.setUpComingMovies(try await strongSelf.getUpcomingMovies())
                 strongSelf.setNowPlayingMovies(try await strongSelf.getNowPlayingMovies())
             }
-            catch let errorMessage as ErrorMessage {
-                strongSelf.setErrorMessage(errorMessage)
+            catch  {
+                strongSelf.setErrorMessage(ErrorMessage(error: error))
             }
         }
     }
