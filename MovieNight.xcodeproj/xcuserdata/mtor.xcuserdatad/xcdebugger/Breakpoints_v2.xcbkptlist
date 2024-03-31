@@ -336,54 +336,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "231D4269-DF0E-4FD0-BF63-0FA16D48CB10"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreKit/RemoteAPI.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "request(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "231D4269-DF0E-4FD0-BF63-0FA16D48CB10 - 6a0d9f2c558c71dd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "CoreKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "2208">
-               </Location>
-               <Location
-                  uuid = "231D4269-DF0E-4FD0-BF63-0FA16D48CB10 - 6a0d9f2c558c7183"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "CoreKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "1104">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E443BF79-9C79-4AB3-9EFA-B465611183DC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -395,6 +347,114 @@
             endingLineNumber = "33"
             landmarkName = "setErrorMessage(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreKit/RemoteAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - d64366a05eb733ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
+                  moduleName = "CoreKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - d64366a05eb733ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
+                  moduleName = "CoreKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - 6a0d9f2c558c7fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
+                  moduleName = "CoreKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "660">
+               </Location>
+               <Location
+                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - 6a0d9f2c558c7fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
+                  moduleName = "CoreKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "676">
+               </Location>
+               <Location
+                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - c0ead0724e1119ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
+                  moduleName = "CoreKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - c0ead0724e1119ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
+                  moduleName = "CoreKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

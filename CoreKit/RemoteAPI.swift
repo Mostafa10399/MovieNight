@@ -15,32 +15,15 @@ extension RemoteAPI {
     
     
     public func request<T: Codable>(_ service: RemoteService) async throws -> T {
-        let request: URLRequest
         do {
-            request = try service.asURLRequest()
+            let request = try service.asURLRequest()
+            let (data, _) = try await URLSession.shared.data(for: request)
+            let fetchedData = try JSONDecoder().decode(T.self, from: data)
+            return fetchedData
         } catch {
-            throw ErrorMessage(error: error)
+            throw error
         }
         
-        do {
-            let (data, response) = try await URLSession.shared.data(for: request)
-            guard let httpResponse = response as? HTTPURLResponse else {
-                throw ErrorMessage(title: "Error", message: "Bad Request")
-            }
-            
-            guard (200...299).contains(httpResponse.statusCode) else {
-                throw ErrorMessage(title: "Error", message: "Bad Request")
-            }
-            
-            do {
-                let decodedData = try JSONDecoder().decode(T.self, from: data)
-                return decodedData
-            } catch {
-                throw ErrorMessage(error: error)
-            }
-        } catch {
-            throw ErrorMessage(error: error)
-        }
     }
 }
 
