@@ -8,7 +8,6 @@
 import Foundation
 
 public final class MainDiscoverRepository: DiscoverRepository {
-
     
     // MARK: - Properties
     
@@ -21,18 +20,23 @@ public final class MainDiscoverRepository: DiscoverRepository {
     }
     
     public func getNowPlaying() async throws -> Movies? {
-        guard let token = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
-        return try await remoteApis.getNowPlaying(token: token)
+        guard let auth = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
+        return try await remoteApis.getNowPlaying(auth: auth)
     }
     
     public func getUpComing() async throws -> Movies? {
-        guard let token = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
-        return try await remoteApis.getUpComing(token: token)
+        guard let auth = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
+        return try await remoteApis.getUpComing(auth: auth)
     }
     
     public func getPopular() async throws -> Movies? {
-        guard let token = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
-        return try await remoteApis.getPopular(token: token)
+        guard let auth = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
+        return try await remoteApis.getPopular(auth: auth)
+    }
+    
+    public func getMovieDetails(id: Int) async throws -> MovieDetails? {
+        guard let auth = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
+        return try await remoteApis.getMovieDetails(auth: auth, id: id)
     }
     
 }

@@ -8,9 +8,10 @@
 import Foundation
 
 public enum DiscoverService {
-    case getNowPlaying(token: String)
-    case getUpComing(token: String)
-    case getPopular(token: String)
+    case getNowPlaying(auth: String)
+    case getUpComing(auth: String)
+    case getPopular(auth: String)
+    case getMovieDetails(auth: String, id: Int)
 }
 
 extension DiscoverService: MovieNightService {
@@ -19,22 +20,28 @@ extension DiscoverService: MovieNightService {
     
     public var requestConfiguration: RequestConfiguration {
         switch self {
-        case let .getNowPlaying(token):
-            let parameters = ["api_key": token]
+        case let .getNowPlaying(auth):
+            let parameters = ["api_key": auth]
             return RequestConfiguration(
                 path: mainRoute.appending("now_playing"),
                 parameters: parameters,
                 encoding: .url)
-        case let .getUpComing(token):
-            let parameters = ["api_key": token]
+        case let .getUpComing(auth):
+            let parameters = ["api_key": auth]
             return RequestConfiguration(
                 path: mainRoute.appending("upcoming"),
                 parameters: parameters,
                 encoding: .url)
-        case let .getPopular(token):
-            let parameters = ["api_key": token]
+        case let .getPopular(auth):
+            let parameters = ["api_key": auth]
             return RequestConfiguration(
                 path: mainRoute.appending("popular"),
+                parameters:  parameters,
+                encoding: .url)
+        case let .getMovieDetails(auth, id):
+            let parameters = ["api_key": auth]
+            return RequestConfiguration(
+                path: mainRoute.appending("\(id)"),
                 parameters:  parameters,
                 encoding: .url)
         }

@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 public protocol GetNowPlayingMoviesUseCase {
     var discoverRepository: DiscoverRepository { get }
     func getNowPlayingMovies() async throws -> MovieSectionPresentable?

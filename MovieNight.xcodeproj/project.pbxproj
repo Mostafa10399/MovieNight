@@ -49,6 +49,10 @@
 		DE0ACE1F2BB8926700DC6CC3 /* GetNowPlayingMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0ACE1E2BB8926700DC6CC3 /* GetNowPlayingMoviesUseCase.swift */; };
 		DE0ACE212BB8AB6900DC6CC3 /* MovieSectionPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0ACE202BB8AB6900DC6CC3 /* MovieSectionPresentable.swift */; };
 		DE0ACE242BB8B52800DC6CC3 /* MovieSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0ACE232BB8B52800DC6CC3 /* MovieSection.swift */; };
+		DE0ACE262BB8D67900DC6CC3 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0ACE252BB8D67900DC6CC3 /* MovieDetails.swift */; };
+		DE0ACE282BB8D8CA00DC6CC3 /* ProductionCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0ACE272BB8D8CA00DC6CC3 /* ProductionCountry.swift */; };
+		DE0ACE2A2BB8D8EC00DC6CC3 /* MovieType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0ACE292BB8D8EC00DC6CC3 /* MovieType.swift */; };
+		DE0ACE2C2BB8E10700DC6CC3 /* GetMovieDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0ACE2B2BB8E10700DC6CC3 /* GetMovieDetailsUseCase.swift */; };
 		DE4E43242BB5A6D8008D405D /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE4E43232BB5A6D8008D405D /* Montserrat-Bold.ttf */; };
 		DE4E43262BB5A6E8008D405D /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE4E43252BB5A6E8008D405D /* Montserrat-ExtraLight.ttf */; };
 		DE4E43282BB5A6F2008D405D /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE4E43272BB5A6F2008D405D /* Montserrat-Medium.ttf */; };
@@ -172,6 +176,10 @@
 		DE0ACE1E2BB8926700DC6CC3 /* GetNowPlayingMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNowPlayingMoviesUseCase.swift; sourceTree = "<group>"; };
 		DE0ACE202BB8AB6900DC6CC3 /* MovieSectionPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSectionPresentable.swift; sourceTree = "<group>"; };
 		DE0ACE232BB8B52800DC6CC3 /* MovieSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSection.swift; sourceTree = "<group>"; };
+		DE0ACE252BB8D67900DC6CC3 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
+		DE0ACE272BB8D8CA00DC6CC3 /* ProductionCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionCountry.swift; sourceTree = "<group>"; };
+		DE0ACE292BB8D8EC00DC6CC3 /* MovieType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieType.swift; sourceTree = "<group>"; };
+		DE0ACE2B2BB8E10700DC6CC3 /* GetMovieDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailsUseCase.swift; sourceTree = "<group>"; };
 		DE4E43232BB5A6D8008D405D /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		DE4E43252BB5A6E8008D405D /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
 		DE4E43272BB5A6F2008D405D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -425,6 +433,7 @@
 				DE0ACE1A2BB8908C00DC6CC3 /* GetUpcomingMoviesUseCase.swift */,
 				DE0ACE1C2BB891C900DC6CC3 /* GetPopularMoviesUseCase.swift */,
 				DE0ACE1E2BB8926700DC6CC3 /* GetNowPlayingMoviesUseCase.swift */,
+				DE0ACE2B2BB8E10700DC6CC3 /* GetMovieDetailsUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -493,6 +502,9 @@
 			children = (
 				DE8A7DF32BB709B700DD823F /* Movies.swift */,
 				DE8A7E0F2BB75CFB00DD823F /* MoviesResult.swift */,
+				DE0ACE252BB8D67900DC6CC3 /* MovieDetails.swift */,
+				DE0ACE272BB8D8CA00DC6CC3 /* ProductionCountry.swift */,
+				DE0ACE292BB8D8EC00DC6CC3 /* MovieType.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -806,6 +818,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0ACE212BB8AB6900DC6CC3 /* MovieSectionPresentable.swift in Sources */,
+				DE0ACE2C2BB8E10700DC6CC3 /* GetMovieDetailsUseCase.swift in Sources */,
 				DE8A7E1B2BB792C500DD823F /* ParameterEncoding.swift in Sources */,
 				DE8A7E0E2BB75C0200DD823F /* RemoteAPI.swift in Sources */,
 				DE8A7E182BB767EC00DD823F /* Bundle+infoForKey.swift in Sources */,
@@ -816,6 +829,7 @@
 				DE8A7DF42BB709B700DD823F /* Movies.swift in Sources */,
 				DE8A7E102BB75CFB00DD823F /* MoviesResult.swift in Sources */,
 				DE0ACE162BB88F3100DC6CC3 /* MovieDetailsPresentable.swift in Sources */,
+				DE0ACE262BB8D67900DC6CC3 /* MovieDetails.swift in Sources */,
 				DE0ACE1F2BB8926700DC6CC3 /* GetNowPlayingMoviesUseCase.swift in Sources */,
 				DE0ACE172BB88F3100DC6CC3 /* CastMemberPresentable.swift in Sources */,
 				DE0ACE1B2BB8908C00DC6CC3 /* GetUpcomingMoviesUseCase.swift in Sources */,
@@ -824,9 +838,11 @@
 				DE8A7E142BB75E5C00DD823F /* DiscoverRepository.swift in Sources */,
 				DE8A7E002BB737F500DD823F /* RemoteService.swift in Sources */,
 				DE8A7E072BB7438E00DD823F /* DiscoverService.swift in Sources */,
+				DE0ACE282BB8D8CA00DC6CC3 /* ProductionCountry.swift in Sources */,
 				DE0ACE182BB88F3100DC6CC3 /* MovieListPresentable.swift in Sources */,
 				DE8A7E0C2BB75B6E00DD823F /* DiscoverApis.swift in Sources */,
 				DE8A7DFD2BB71C3900DD823F /* RequestConfiguration.swift in Sources */,
+				DE0ACE2A2BB8D8EC00DC6CC3 /* MovieType.swift in Sources */,
 				DE0ACE1D2BB891C900DC6CC3 /* GetPopularMoviesUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

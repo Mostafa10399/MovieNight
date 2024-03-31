@@ -22,19 +22,18 @@ struct HomeRootView: View {
             ScrollView(showsIndicators: false) {
                 LazyVStack(spacing: 20) {
                     viewModel.nowPlayingMoviesSection.map { section in
-                        MovieSection(section: section)
+                        MovieSection(section: section, didTapOnMovie: { viewModel.didTapOnMovie(id: $0) })
                     }
                     viewModel.upComingMoviesSection.map { section in
-                        MovieSection(section: section)
+                        MovieSection(section: section, didTapOnMovie: { viewModel.didTapOnMovie(id: $0) })
                     }
                     viewModel.popularMoviesSection.map { section in
-                        MovieSection(section: section)
+                        MovieSection(section: section, didTapOnMovie: { viewModel.didTapOnMovie(id: $0) })
                     }
                 }
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-//        .padding(.horizontal, 16)
         .navigationTitle("Find a Movie To Watch")
         .onAppear {
             if didAppear {

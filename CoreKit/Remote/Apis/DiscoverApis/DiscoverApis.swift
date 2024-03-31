@@ -8,7 +8,8 @@
 import Foundation
 
 public protocol DiscoverApis: RemoteAPI {
-    func getNowPlaying(token: String) async throws -> Movies
-    func getUpComing(token: String) async throws -> Movies
-    func getPopular(token: String) async throws -> Movies
+    func getNowPlaying(auth: String) async throws -> Movies
+    func getUpComing(auth: String) async throws -> Movies
+    func getPopular(auth: String) async throws -> Movies
+    func getMovieDetails(auth: String, id: Int) async throws -> MovieDetails
 }

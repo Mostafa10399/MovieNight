@@ -38,7 +38,9 @@ final class HomeDependencyContainer {
             movieDetailsViewFactory: movieDetailsViewFactory)
     }
     private func makeHomeRootViewModel() -> HomeRootViewModel {
-        HomeRootViewModel(discoverRepository: makeDiscoverRepository())
+        HomeRootViewModel(
+            discoverRepository: makeDiscoverRepository(),
+            goToMovieDetails: sharedHomeViewModel)
     }
     
     private func makeHomeRootView(viewModel: HomeRootViewModel) -> HomeRootView {
@@ -46,7 +48,7 @@ final class HomeDependencyContainer {
     }
     
     private func makeMovieDetailsViewModel(id: Int) -> MovieDetailsViewModel {
-        MovieDetailsViewModel()
+        MovieDetailsViewModel(discoverRepository: makeDiscoverRepository(), movieId: id)
     }
     
     private func makeMovieDetailsView(viewModel: MovieDetailsViewModel) -> MovieDetailsView {

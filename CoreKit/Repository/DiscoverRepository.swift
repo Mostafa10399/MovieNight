@@ -11,4 +11,5 @@ public protocol DiscoverRepository {
     func getNowPlaying() async throws -> Movies?
     func getUpComing() async throws -> Movies?
     func getPopular() async throws -> Movies?
+    func getMovieDetails(id: Int) async throws -> MovieDetails?
 }

@@ -48,7 +48,7 @@ final class HomeNavigationController: NiblessNavigationController {
         appearance.configureWithOpaqueBackground()
         appearance.titleTextAttributes = [
             .foregroundColor: UIColor.accent,
-            .font: UIFont(name: "Montserrat-SemiBold", size: 16) ?? .systemFont(ofSize: 16)
+            .font: UIFont(name: "Montserrat-SemiBold", size: 18) ?? .systemFont(ofSize: 18)
         ]
         appearance.largeTitleTextAttributes = [
             .foregroundColor: UIColor.accent,
@@ -58,7 +58,6 @@ final class HomeNavigationController: NiblessNavigationController {
         appearance.shadowColor = .clear
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
-        UINavigationBar.appearance().prefersLargeTitles = true
     }
     
     private func observeToViewModel() {

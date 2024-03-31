@@ -13,6 +13,7 @@ struct MovieSection: View {
     // MARK: - Properties
     
     let section: MovieSectionPresentable
+    let didTapOnMovie: ((Int) -> Void)?
     
     // MARK: - CodeView
     
@@ -69,6 +70,9 @@ struct MovieSection: View {
                                 }
                             }
                             .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .onTapGesture{
+                                didTapOnMovie?(movie.id)
+                            }
                     }
                 }
                 .padding(.horizontal, 16)

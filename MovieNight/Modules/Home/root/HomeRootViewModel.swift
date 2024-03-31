@@ -11,13 +11,11 @@ import Combine
 
 final class HomeRootViewModel: ObservableObject, BaseViewModel, GetPopularMoviesUseCase, GetUpcomingMoviesUseCase, GetNowPlayingMoviesUseCase {
 
-    
-    
-    
     // MARK: - Properties
         
     @Published var isDataLoading: Bool
     @Published var errorMessage: ErrorMessage?
+    private let goToMovieDetails: GoToMovieDetailsView
     let discoverRepository: DiscoverRepository
     var upComingMoviesSection: MovieSectionPresentable?
     var nowPlayingMoviesSection: MovieSectionPresentable?
@@ -25,10 +23,13 @@ final class HomeRootViewModel: ObservableObject, BaseViewModel, GetPopularMovies
         
     // MARK: - Methods
     
-    init(discoverRepository: DiscoverRepository) {
-        self.discoverRepository = discoverRepository
-        self.isDataLoading = false
-    }
+    init(
+        discoverRepository: DiscoverRepository,
+        goToMovieDetails: GoToMovieDetailsView) {
+            self.goToMovieDetails = goToMovieDetails
+            self.discoverRepository = discoverRepository
+            self.isDataLoading = false
+        }
     
     func getData() {
         Task { [weak self] in
@@ -56,6 +57,10 @@ final class HomeRootViewModel: ObservableObject, BaseViewModel, GetPopularMovies
     
     private func setPopularMovies(_ section: MovieSectionPresentable?) {
         self.popularMoviesSection = section
+    }
+    
+    func didTapOnMovie(id: Int) {
+        self.goToMovieDetails.navigateToMovieDetailsView(by: id)
     }
     
 }
