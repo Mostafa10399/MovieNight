@@ -86,6 +86,21 @@
 		DEE73B732BB9200100E430E5 /* MovieSectionPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B722BB9200100E430E5 /* MovieSectionPresentable.swift */; };
 		DEE73B752BB9202A00E430E5 /* GetMovieDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B742BB9202A00E430E5 /* GetMovieDetailsUseCase.swift */; };
 		DEE73B772BB9205100E430E5 /* GetCastForMovieUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B762BB9205100E430E5 /* GetCastForMovieUseCase.swift */; };
+		DEE73B7A2BB9230400E430E5 /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = DEE73B792BB9230400E430E5 /* Movies.json */; };
+		DEE73B7C2BB9233200E430E5 /* MovieDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = DEE73B7B2BB9233200E430E5 /* MovieDetails.json */; };
+		DEE73B802BB9237700E430E5 /* Credits.json in Resources */ = {isa = PBXBuildFile; fileRef = DEE73B7F2BB9237700E430E5 /* Credits.json */; };
+		DEE73B822BB9239A00E430E5 /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = DEE73B812BB9239A00E430E5 /* Mock.json */; };
+		DEE73B862BB9245200E430E5 /* SpyDiscoverServiceSuccessfully.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B852BB9245200E430E5 /* SpyDiscoverServiceSuccessfully.swift */; };
+		DEE73B882BB9246900E430E5 /* SpyDiscoverServiceFail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B872BB9246900E430E5 /* SpyDiscoverServiceFail.swift */; };
+		DEE73B8A2BB926F100E430E5 /* SpyMovieNightDiscoverApiSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B892BB926F100E430E5 /* SpyMovieNightDiscoverApiSuccess.swift */; };
+		DEE73B8C2BB9270200E430E5 /* SpyMovieNightDiscoverApiFail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B8B2BB9270200E430E5 /* SpyMovieNightDiscoverApiFail.swift */; };
+		DEE73B8F2BB927AA00E430E5 /* Bundle+UnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B8E2BB927AA00E430E5 /* Bundle+UnitTest.swift */; };
+		DEE73B912BB9286700E430E5 /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B902BB9286700E430E5 /* RemoteAPI.swift */; };
+		DEE73B942BB929AC00E430E5 /* SpyMainDiscoverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B932BB929AC00E430E5 /* SpyMainDiscoverRepository.swift */; };
+		DEE73B962BB92AA500E430E5 /* SpyMainMovieNightRepository_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B952BB92AA500E430E5 /* SpyMainMovieNightRepository_Tests.swift */; };
+		DEE73B982BB92BC400E430E5 /* AsyncTest+UnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B972BB92BC400E430E5 /* AsyncTest+UnitTest.swift */; };
+		DEE73B9A2BB92C6800E430E5 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B992BB92C6800E430E5 /* Errors.swift */; };
+		DEE73B9D2BB93B2B00E430E5 /* SpyGetUpcomingMoviesUsecase_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE73B9C2BB93B2B00E430E5 /* SpyGetUpcomingMoviesUsecase_Tests.swift */; };
 		DEFED2142BB8517100A61DB8 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFED2132BB8517100A61DB8 /* LoaderView.swift */; };
 		DEFED2162BB8518700A61DB8 /* ErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFED2152BB8518700A61DB8 /* ErrorMessageView.swift */; };
 /* End PBXBuildFile section */
@@ -218,6 +233,21 @@
 		DEE73B722BB9200100E430E5 /* MovieSectionPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSectionPresentable.swift; sourceTree = "<group>"; };
 		DEE73B742BB9202A00E430E5 /* GetMovieDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieDetailsUseCase.swift; sourceTree = "<group>"; };
 		DEE73B762BB9205100E430E5 /* GetCastForMovieUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCastForMovieUseCase.swift; sourceTree = "<group>"; };
+		DEE73B792BB9230400E430E5 /* Movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Movies.json; sourceTree = "<group>"; };
+		DEE73B7B2BB9233200E430E5 /* MovieDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MovieDetails.json; sourceTree = "<group>"; };
+		DEE73B7F2BB9237700E430E5 /* Credits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Credits.json; sourceTree = "<group>"; };
+		DEE73B812BB9239A00E430E5 /* Mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mock.json; sourceTree = "<group>"; };
+		DEE73B852BB9245200E430E5 /* SpyDiscoverServiceSuccessfully.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyDiscoverServiceSuccessfully.swift; sourceTree = "<group>"; };
+		DEE73B872BB9246900E430E5 /* SpyDiscoverServiceFail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyDiscoverServiceFail.swift; sourceTree = "<group>"; };
+		DEE73B892BB926F100E430E5 /* SpyMovieNightDiscoverApiSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyMovieNightDiscoverApiSuccess.swift; sourceTree = "<group>"; };
+		DEE73B8B2BB9270200E430E5 /* SpyMovieNightDiscoverApiFail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyMovieNightDiscoverApiFail.swift; sourceTree = "<group>"; };
+		DEE73B8E2BB927AA00E430E5 /* Bundle+UnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+UnitTest.swift"; sourceTree = "<group>"; };
+		DEE73B902BB9286700E430E5 /* RemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
+		DEE73B932BB929AC00E430E5 /* SpyMainDiscoverRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyMainDiscoverRepository.swift; sourceTree = "<group>"; };
+		DEE73B952BB92AA500E430E5 /* SpyMainMovieNightRepository_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyMainMovieNightRepository_Tests.swift; sourceTree = "<group>"; };
+		DEE73B972BB92BC400E430E5 /* AsyncTest+UnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncTest+UnitTest.swift"; sourceTree = "<group>"; };
+		DEE73B992BB92C6800E430E5 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		DEE73B9C2BB93B2B00E430E5 /* SpyGetUpcomingMoviesUsecase_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyGetUpcomingMoviesUsecase_Tests.swift; sourceTree = "<group>"; };
 		DEFED2132BB8517100A61DB8 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		DEFED2152BB8518700A61DB8 /* ErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -309,6 +339,8 @@
 		DE0897E42BB4630700DDC1F2 /* MovieNightTests */ = {
 			isa = PBXGroup;
 			children = (
+				DEE73B9E2BB93C8A00E430E5 /* Extensions */,
+				DEE73B9B2BB938E500E430E5 /* SpyUsecases */,
 				DE0897E52BB4630700DDC1F2 /* MovieNightTests.swift */,
 			);
 			path = MovieNightTests;
@@ -465,6 +497,9 @@
 		DE8A7DE12BB7075700DD823F /* CoreKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				DEE73B8D2BB9278A00E430E5 /* Extenstion */,
+				DEE73B832BB923ED00E430E5 /* SpyRemote */,
+				DEE73B922BB9292600E430E5 /* SpyRepository */,
 				DE8A7DE22BB7075700DD823F /* CoreKitTests.swift */,
 			);
 			path = CoreKitTests;
@@ -542,6 +577,7 @@
 			children = (
 				DE8A7E022BB73F7D00DD823F /* String+url.swift */,
 				DE8A7E172BB767EC00DD823F /* Bundle+infoForKey.swift */,
+				DEE73B992BB92C6800E430E5 /* Errors.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -616,6 +652,71 @@
 				DEE73B762BB9205100E430E5 /* GetCastForMovieUseCase.swift */,
 			);
 			path = Usecase;
+			sourceTree = "<group>";
+		};
+		DEE73B782BB9222F00E430E5 /* SpyDiscoverApis */ = {
+			isa = PBXGroup;
+			children = (
+				DEE73B892BB926F100E430E5 /* SpyMovieNightDiscoverApiSuccess.swift */,
+				DEE73B8B2BB9270200E430E5 /* SpyMovieNightDiscoverApiFail.swift */,
+			);
+			path = SpyDiscoverApis;
+			sourceTree = "<group>";
+		};
+		DEE73B832BB923ED00E430E5 /* SpyRemote */ = {
+			isa = PBXGroup;
+			children = (
+				DEE73B842BB923FB00E430E5 /* SpyDiscoverServices */,
+				DEE73B782BB9222F00E430E5 /* SpyDiscoverApis */,
+			);
+			path = SpyRemote;
+			sourceTree = "<group>";
+		};
+		DEE73B842BB923FB00E430E5 /* SpyDiscoverServices */ = {
+			isa = PBXGroup;
+			children = (
+				DEE73B792BB9230400E430E5 /* Movies.json */,
+				DEE73B7B2BB9233200E430E5 /* MovieDetails.json */,
+				DEE73B7F2BB9237700E430E5 /* Credits.json */,
+				DEE73B812BB9239A00E430E5 /* Mock.json */,
+				DEE73B852BB9245200E430E5 /* SpyDiscoverServiceSuccessfully.swift */,
+				DEE73B872BB9246900E430E5 /* SpyDiscoverServiceFail.swift */,
+			);
+			path = SpyDiscoverServices;
+			sourceTree = "<group>";
+		};
+		DEE73B8D2BB9278A00E430E5 /* Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				DEE73B8E2BB927AA00E430E5 /* Bundle+UnitTest.swift */,
+				DEE73B902BB9286700E430E5 /* RemoteAPI.swift */,
+				DEE73B972BB92BC400E430E5 /* AsyncTest+UnitTest.swift */,
+			);
+			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		DEE73B922BB9292600E430E5 /* SpyRepository */ = {
+			isa = PBXGroup;
+			children = (
+				DEE73B932BB929AC00E430E5 /* SpyMainDiscoverRepository.swift */,
+				DEE73B952BB92AA500E430E5 /* SpyMainMovieNightRepository_Tests.swift */,
+			);
+			path = SpyRepository;
+			sourceTree = "<group>";
+		};
+		DEE73B9B2BB938E500E430E5 /* SpyUsecases */ = {
+			isa = PBXGroup;
+			children = (
+				DEE73B9C2BB93B2B00E430E5 /* SpyGetUpcomingMoviesUsecase_Tests.swift */,
+			);
+			path = SpyUsecases;
+			sourceTree = "<group>";
+		};
+		DEE73B9E2BB93C8A00E430E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DEFED2122BB8515B00A61DB8 /* Reusable */ = {
@@ -797,6 +898,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE73B7A2BB9230400E430E5 /* Movies.json in Resources */,
+				DEE73B802BB9237700E430E5 /* Credits.json in Resources */,
+				DEE73B822BB9239A00E430E5 /* Mock.json in Resources */,
+				DEE73B7C2BB9233200E430E5 /* MovieDetails.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,6 +963,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE73B9D2BB93B2B00E430E5 /* SpyGetUpcomingMoviesUsecase_Tests.swift in Sources */,
 				DE0897E62BB4630700DDC1F2 /* MovieNightTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -884,6 +990,7 @@
 				DE8A7E072BB7438E00DD823F /* DiscoverService.swift in Sources */,
 				DE0ACE282BB8D8CA00DC6CC3 /* ProductionCountry.swift in Sources */,
 				DE8A7E0C2BB75B6E00DD823F /* DiscoverApis.swift in Sources */,
+				DEE73B9A2BB92C6800E430E5 /* Errors.swift in Sources */,
 				DE8A7DFD2BB71C3900DD823F /* RequestConfiguration.swift in Sources */,
 				DE0ACE2A2BB8D8EC00DC6CC3 /* MovieType.swift in Sources */,
 				DEE73B582BB90AE800E430E5 /* Credits.swift in Sources */,
@@ -895,7 +1002,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE73B8A2BB926F100E430E5 /* SpyMovieNightDiscoverApiSuccess.swift in Sources */,
+				DEE73B8F2BB927AA00E430E5 /* Bundle+UnitTest.swift in Sources */,
+				DEE73B942BB929AC00E430E5 /* SpyMainDiscoverRepository.swift in Sources */,
+				DEE73B862BB9245200E430E5 /* SpyDiscoverServiceSuccessfully.swift in Sources */,
+				DEE73B882BB9246900E430E5 /* SpyDiscoverServiceFail.swift in Sources */,
+				DEE73B912BB9286700E430E5 /* RemoteAPI.swift in Sources */,
 				DE8A7DE32BB7075700DD823F /* CoreKitTests.swift in Sources */,
+				DEE73B962BB92AA500E430E5 /* SpyMainMovieNightRepository_Tests.swift in Sources */,
+				DEE73B982BB92BC400E430E5 /* AsyncTest+UnitTest.swift in Sources */,
+				DEE73B8C2BB9270200E430E5 /* SpyMovieNightDiscoverApiFail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
