@@ -52,8 +52,8 @@ final class MovieDetailsViewModel: ObservableObject, BaseViewModel, GetMovieDeta
                 
                 strongSelf.setScreenData(movieDetails: movieDetails)
                 strongSelf.setCast(cast)
-            } catch let errorMessage as ErrorMessage {
-                strongSelf.setErrorMessage(errorMessage)
+            } catch  {
+                strongSelf.setErrorMessage(ErrorMessage(error: error))
             }
         }
     }

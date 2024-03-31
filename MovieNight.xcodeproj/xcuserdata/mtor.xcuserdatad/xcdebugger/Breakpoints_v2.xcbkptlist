@@ -103,207 +103,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "10BCEFF8-0370-4032-AF2A-08719359E690"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "getData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "10BCEFF8-0370-4032-AF2A-08719359E690 - 6cb63cd8ee1a10aa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.HomeRootViewModel.getData() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "544">
-               </Location>
-               <Location
-                  uuid = "10BCEFF8-0370-4032-AF2A-08719359E690 - c860aa304cbafab5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.HomeRootViewModel.getData() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "544">
-               </Location>
-               <Location
-                  uuid = "10BCEFF8-0370-4032-AF2A-08719359E690 - cd961cd3ca182f0d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.HomeRootViewModel.getData() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "544">
-               </Location>
-               <Location
-                  uuid = "10BCEFF8-0370-4032-AF2A-08719359E690 - 6cb63cd8ee1a10cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.HomeRootViewModel.getData() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "10BCEFF8-0370-4032-AF2A-08719359E690 - c860aa304cbafad4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.HomeRootViewModel.getData() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "10BCEFF8-0370-4032-AF2A-08719359E690 - cd961cd3ca182f6c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.HomeRootViewModel.getData() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "10BCEFF8-0370-4032-AF2A-08719359E690 - 6cb63cd8ee1a10cb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.HomeRootViewModel.getData() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "268">
-               </Location>
-               <Location
-                  uuid = "10BCEFF8-0370-4032-AF2A-08719359E690 - c860aa304cbafad4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(9) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.HomeRootViewModel.getData() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "268">
-               </Location>
-               <Location
-                  uuid = "10BCEFF8-0370-4032-AF2A-08719359E690 - cd961cd3ca182f6c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(10) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.HomeRootViewModel.getData() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/HomeRootViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "268">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C7B61A45-D87E-4617-84E4-2285292A06E6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MovieNight/Modules/Home/MovieDetails/MovieDetailsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "getMovieDetails()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C7B61A45-D87E-4617-84E4-2285292A06E6 - d3bbd14e1e05b787"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.MovieDetailsViewModel.getMovieDetails() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/MovieDetails/MovieDetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "268">
-               </Location>
-               <Location
-                  uuid = "C7B61A45-D87E-4617-84E4-2285292A06E6 - afece8179b9a1586"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in MovieNight.MovieDetailsViewModel.getMovieDetails() -&gt; ()"
-                  moduleName = "MovieNight"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/MovieDetails/MovieDetailsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "288">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "9546DAF8-6DC0-46C4-B724-C7C164CB4E74"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -336,123 +135,172 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E443BF79-9C79-4AB3-9EFA-B465611183DC"
+            uuid = "BCE7DE74-2553-45CE-BDD3-BEDE13DAD2F5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MovieNight/Extenstions/ScreenStateProtocol.swift"
+            filePath = "MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "setErrorMessage(_:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getNowPlayingMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BCE7DE74-2553-45CE-BDD3-BEDE13DAD2F5 - 6b5472e1f6a7f6ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for MovieNight.GetNowPlayingMoviesUseCase.getNowPlayingMovies() async throws -&gt; Swift.Optional&lt;MovieNight.MovieSectionPresentable&gt;"
+                  moduleName = "MovieNight"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "BCE7DE74-2553-45CE-BDD3-BEDE13DAD2F5 - 2b564c8696119cd9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for MovieNight.GetNowPlayingMoviesUseCase.getNowPlayingMovies() async throws -&gt; Swift.Optional&lt;MovieNight.MovieSectionPresentable&gt;"
+                  moduleName = "MovieNight"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "BCE7DE74-2553-45CE-BDD3-BEDE13DAD2F5 - 26dc6fe7ea4dba79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MovieNight.GetNowPlayingMoviesUseCase.getNowPlayingMovies() async throws -&gt; Swift.Optional&lt;MovieNight.MovieSectionPresentable&gt;"
+                  moduleName = "MovieNight"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "BCE7DE74-2553-45CE-BDD3-BEDE13DAD2F5 - c3006d7a1c789db8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MovieNight.GetNowPlayingMoviesUseCase.getNowPlayingMovies() async throws -&gt; Swift.Optional&lt;MovieNight.MovieSectionPresentable&gt;"
+                  moduleName = "MovieNight"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "BCE7DE74-2553-45CE-BDD3-BEDE13DAD2F5 - c3006d7a1c789db8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for MovieNight.GetNowPlayingMoviesUseCase.getNowPlayingMovies() async throws -&gt; Swift.Optional&lt;MovieNight.MovieSectionPresentable&gt;"
+                  moduleName = "MovieNight"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB49AD73-8B40-45FA-BCE9-876B83204E88"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getNowPlayingMovies()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE"
+            uuid = "31ECDD05-7282-4255-BFF9-E2D3EE33CED7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreKit/RemoteAPI.swift"
+            filePath = "MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "request(_:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getNowPlayingMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A2E5039-2E89-4CDE-BDD2-76720FB5A7A5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getNowPlayingMovies()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - d64366a05eb733ea"
+                  uuid = "8A2E5039-2E89-4CDE-BDD2-76720FB5A7A5 - 26dc6fe7ea4dba5a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "CoreKit"
+                  symbolName = "(3) suspend resume partial function for MovieNight.GetNowPlayingMoviesUseCase.getNowPlayingMovies() async throws -&gt; Swift.Optional&lt;MovieNight.MovieSectionPresentable&gt;"
+                  moduleName = "MovieNight"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "432">
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "180">
                </Location>
                <Location
-                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - d64366a05eb733ea"
+                  uuid = "8A2E5039-2E89-4CDE-BDD2-76720FB5A7A5 - 483be6b178a4d9cb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "CoreKit"
+                  symbolName = "closure #1 (CoreKit.MoviesResult) -&gt; MovieNight.MovieListPresentable in MovieNight.GetNowPlayingMoviesUseCase.getNowPlayingMovies() async throws -&gt; Swift.Optional&lt;MovieNight.MovieSectionPresentable&gt;"
+                  moduleName = "MovieNight"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
+                  urlString = "file:///Users/mtor/Desktop/MovieNight/MovieNight/Modules/Home/root/Usecase/GetNowPlayingMoviesUseCase.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "448">
-               </Location>
-               <Location
-                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - 6a0d9f2c558c7fec"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "CoreKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "660">
-               </Location>
-               <Location
-                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - 6a0d9f2c558c7fec"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "CoreKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "676">
-               </Location>
-               <Location
-                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - c0ead0724e1119ef"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "CoreKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "200">
-               </Location>
-               <Location
-                  uuid = "0C665274-B9EB-4134-9E0D-2A78BCBFDFDE - c0ead0724e1119ef"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for CoreKit.RemoteAPI.request&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Decodable, &#x3c4;_1_0: Swift.Encodable&gt;(CoreKit.RemoteService) async throws -&gt; &#x3c4;_1_0"
-                  moduleName = "CoreKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mtor/Desktop/MovieNight/CoreKit/RemoteAPI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "216">
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>
