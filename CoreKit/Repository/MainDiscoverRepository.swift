@@ -8,7 +8,7 @@
 import Foundation
 
 public final class MainDiscoverRepository: DiscoverRepository {
-    
+
     // MARK: - Properties
     
     private let remoteApis: DiscoverApis
@@ -37,6 +37,11 @@ public final class MainDiscoverRepository: DiscoverRepository {
     public func getMovieDetails(id: Int) async throws -> MovieDetails? {
         guard let auth = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
         return try await remoteApis.getMovieDetails(auth: auth, id: id)
+    }
+    
+    public func getMovieCredits(id: Int) async throws -> Credits? {
+        guard let auth = Bundle(for: MainDiscoverRepository.self).infoDictionary?["API_KEY"] as? String else { return nil }
+        return try await remoteApis.getMovieCredits(auth: auth, id: id)
     }
     
 }

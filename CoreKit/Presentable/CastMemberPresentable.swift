@@ -10,15 +10,17 @@ import Foundation
 public struct CastMemberPresentable {
     public let profileUrl: URL?
     public let name: String
+    public let characterName: String
     public let id: Int
     
     init(_ item: CastMember) {
         self.id = item.id
         if let profile = item.profilePath {
-            self.profile = "https://image.tmdb.org/t/p/w500" + profile
+            self.profileUrl = URL(string: "https://image.tmdb.org/t/p/w500" + profile)
         } else {
-            profile = ""
+            profileUrl = nil
         }
         self.name = item.name ?? ""
+        self.characterName = item.character ?? ""
     }
 }

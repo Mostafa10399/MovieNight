@@ -8,7 +8,7 @@
 import Foundation
 import CoreKit
 
-final class MovieDetailsViewModel: ObservableObject, BaseViewModel, GetMovieDetailsUseCase {
+final class MovieDetailsViewModel: ObservableObject, BaseViewModel, GetMovieDetailsUseCase, GetCastForMovieUseCase {
     
     
     // MARK: - Properties
@@ -24,6 +24,7 @@ final class MovieDetailsViewModel: ObservableObject, BaseViewModel, GetMovieDeta
     var runTime: String
     var rate: String
     var overView: String
+    var cast: [CastMemberPresentable]
     
     // MARK: - Methods
     
@@ -37,6 +38,7 @@ final class MovieDetailsViewModel: ObservableObject, BaseViewModel, GetMovieDeta
         self.runTime = ""
         self.rate = ""
         self.overView = ""
+        self.cast = []
     }
     
     func getMovieDetails() {
@@ -44,12 +46,20 @@ final class MovieDetailsViewModel: ObservableObject, BaseViewModel, GetMovieDeta
             guard let strongSelf = self else { return }
             defer { strongSelf.setIsDataLoading(false) }
             do {
+                strongSelf.setIsDataLoading(true)
                 guard let movieDetails = try await strongSelf.getMovieDetails(by: strongSelf.movieId) else { return }
+                guard let cast = try await strongSelf.getMovieCast(by: strongSelf.movieId) else { return }
+                
                 strongSelf.setScreenData(movieDetails: movieDetails)
+                strongSelf.setCast(cast)
             } catch let errorMessage as ErrorMessage {
                 strongSelf.setErrorMessage(errorMessage)
             }
         }
+    }
+    
+    private func setCast(_ actors: [CastMemberPresentable]) {
+        self.cast = actors
     }
     
     private func setScreenData(movieDetails: MovieDetailsPresentable) {

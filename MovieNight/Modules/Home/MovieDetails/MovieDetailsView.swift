@@ -86,14 +86,19 @@ struct MovieDetailsView: View {
                             .font(.custom("Montserrat-Regular", size: 14))
                     }
                     .padding(.horizontal, 16)
+                    
                     VStack(spacing: 8){
                         Text("Cast")
                             .font(.custom("Montserrat-SemiBold", size: 18))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .foregroundStyle(.accent)
-                        Text(viewModel.overView)
-                            .foregroundStyle(.accent)
-                            .font(.custom("Montserrat-Regular", size: 14))
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            LazyHStack {
+                                ForEach(viewModel.cast, id: \.id) { castMember in
+                                    CastView(castMember: castMember)
+                                }
+                            }
+                        }
                     }
                     .padding(.horizontal, 16)
                 }

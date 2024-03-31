@@ -12,6 +12,7 @@ public enum DiscoverService {
     case getUpComing(auth: String)
     case getPopular(auth: String)
     case getMovieDetails(auth: String, id: Int)
+    case getMovieCredits(auth: String, id: Int)
 }
 
 extension DiscoverService: MovieNightService {
@@ -42,6 +43,12 @@ extension DiscoverService: MovieNightService {
             let parameters = ["api_key": auth]
             return RequestConfiguration(
                 path: mainRoute.appending("\(id)"),
+                parameters:  parameters,
+                encoding: .url)
+        case let .getMovieCredits(auth, id):
+            let parameters = ["api_key": auth]
+            return RequestConfiguration(
+                path: mainRoute.appending("\(id)/credits"),
                 parameters:  parameters,
                 encoding: .url)
         }

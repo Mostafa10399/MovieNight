@@ -12,4 +12,5 @@ public protocol DiscoverApis: RemoteAPI {
     func getUpComing(auth: String) async throws -> Movies
     func getPopular(auth: String) async throws -> Movies
     func getMovieDetails(auth: String, id: Int) async throws -> MovieDetails
+    func getMovieCredits(auth: String, id: Int) async throws -> Credits
 }

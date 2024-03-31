@@ -32,4 +32,8 @@ public final class MovieNightDiscoverApis: DiscoverApis {
     public func getMovieDetails(auth: String, id: Int) async throws -> MovieDetails {
         try await request(DiscoverService.getMovieDetails(auth: auth, id: id))
     }
+    
+    public func getMovieCredits(auth: String, id: Int) async throws -> Credits {
+        try await request(DiscoverService.getMovieCredits(auth: auth, id: id))
+    }
 }
